@@ -47,19 +47,25 @@ Open your terminal or command prompt and run:
 ```bash
 git clone https://github.com/aakashstha1/movie_recommender.git
 cd movie_recommender
+```
 
 ---
 
 ## Step 3: Create a Virtual Environment (Optional but Recommended):
 
+```bash
 python -m venv venv
 venv\Scripts\activate   #For Windows
 source venv/bin/activate    #For Mac/Linux
+```
 
 ---
 
 ## Step 4: Install Dependencies
+
+``bash
 pip install -r requirements.txt
+```
 
 ---
 
@@ -69,9 +75,12 @@ Create a file named .env in your project folder (same folder as app.py) and add 
 
 ```bash
 TMDB_API_KEY=your_api_key_here
+```
 
 ---
 
 ## Step 6: Run the App
 
+```bash
 streamlit run app.py
+```
