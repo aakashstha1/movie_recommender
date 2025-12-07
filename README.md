@@ -16,7 +16,7 @@ A simple web app built with **Streamlit** that recommends movies based on a sele
 
 ## Requirements
 
-- Python
+- Python 3.7+
 - Streamlit
 - Requests
 - Pandas
@@ -25,9 +25,10 @@ A simple web app built with **Streamlit** that recommends movies based on a sele
 
 ---
 
-## To create TMDB API key visit and login:
+## To create a TMDB API key
 
-     https://www.themoviedb.org/
+Visit and log in:  
+[https://www.themoviedb.org/](https://www.themoviedb.org/)
 
 ---
 
@@ -41,40 +42,40 @@ A simple web app built with **Streamlit** that recommends movies based on a sele
 
 1. **Clone the repository:**
 
-````bash
+```bash
 git clone https://github.com/aakashstha1/movie_recommender.git
-cd movie-recommender
+cd movie_recommender
 
----
+Create a virtual environment (optional but recommended):
 
-2. **Create a virtual environment:**
-
-```bash
 python -m venv venv
-venv\Scripts\activate       # On Windows
-source venv/bin/activate   # On Mac/Linux
 
----
 
-3. **Install dependencies:**
+Activate the virtual environment:
 
-```bash
+Windows:
+
+venv\Scripts\activate
+
+
+Mac/Linux:
+
+source venv/bin/activate
+
+
+Install dependencies:
+
 pip install -r requirements.txt
 
----
 
-4. **Create file:**
+Create a .env file in your project folder and add your TMDB API key:
 
- Create .env file in your folder and add
+TMDB_API_KEY=your_api_key_here
 
- ```bash
- TMDB_API_KEY=<your-api-key>
 
----
+Make sure .env is in the same folder as app.py.
 
-5. **Run:**
+Run the app:
 
-```bash
 streamlit run app.py
 
-````
