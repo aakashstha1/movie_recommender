@@ -16,7 +16,7 @@ A simple web app built with **Streamlit** that recommends movies based on a sele
 
 ## Requirements
 
-- Python 3.7+
+- Python
 - Streamlit
 - Requests
 - Pandas
@@ -34,7 +34,7 @@ A simple web app built with **Streamlit** that recommends movies based on a sele
 ### Step 1: Get a TMDB API Key
 
 Visit and log in:  
-[https://www.themoviedb.org/](https://www.themoviedb.org/)  
+[https://www.themoviedb.org/](https://www.themoviedb.org/)
 
 After login, generate your API key and keep it handy for Step 4.
 
