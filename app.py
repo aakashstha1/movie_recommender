@@ -1,7 +1,15 @@
 import streamlit as st
 import pickle
 import requests
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+
+API_KEY = os.getenv("TMDB_API_KEY")
+
+if not API_KEY:
+    raise ValueError("TMDB_API_KEY not found")
 # ------------------------------
 # Load movie data and similarity matrix
 # ------------------------------
@@ -24,7 +32,7 @@ select_value = st.selectbox("Select Movie", movies_list)
 # ------------------------------
 def fetch_poster(movie_id):
     # TMDB API endpoint to get movie details
-    url = "https://api.themoviedb.org/3/movie/{}?api_key=99c963140d7bca711ca06a09c864cf1b&language=en-US".format(movie_id)
+    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}&language=en-US"
     
     # Send GET request to API
     data = requests.get(url)
