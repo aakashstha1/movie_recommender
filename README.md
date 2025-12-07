@@ -20,30 +20,39 @@ A simple web app built with **Streamlit** that recommends movies based on a sele
 
 ---
 
+Absolutely! Here’s the ready-to-copy-paste Installation & Run section for your README:
+
 ## Installation
 
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/yourusername/movie-recommender.git
-cd movie-recommender
+git clone https://github.com/aakashstha1/movie_recommender.git
+cd movie_recommender
 
----
 
-## Create a virtual environment (optional but recommended):
+Create a virtual environment (optional but recommended):
 
 python -m venv venv
-venv\Scripts\activate       # On Windows
-source venv/bin/activate   # On Mac/Linux
----
 
-## Install dependencies:
+
+Activate the virtual environment:
+
+Windows:
+
+venv\Scripts\activate
+
+
+Mac/Linux:
+
+source venv/bin/activate
+
+
+Install dependencies:
 
 pip install -r requirements.txt
 
----
 
-## Run
+Run the app:
 
 streamlit run app.py
-```
